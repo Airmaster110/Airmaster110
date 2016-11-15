@@ -6,18 +6,17 @@ and open the template in the editor.
 <html>
     <head>
         <title></title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-        <span id="s1" onclick=""clicked();">Hello</span>
+        <span id="s1">Hello</span>
         <script>
-            function clicked() {
-                var theSpan = document.getElementId("s1");
-                var userinput= userinput.value
+            function testhtml() {
+                var theSpan = document.getElementById("s1");
+                var userinput= document.getElementById("inputText")
                 theSpan.innerHTML = userinput.value;
             }
         </script>
         <textarea rows="10" cols="80" id="inputText">Input html to test here</textarea>
-        <button onclick="testHTML();">Text!</button>
+        <button onclick="testhtml();">Text!</button>
     </body>
 </html>
