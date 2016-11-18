@@ -11,20 +11,19 @@ and open the template in the editor.
     </head>
     <body>
         <div>TODO write content</div>
-        <span id="s1">Write here the list.</span>
         <textarea rows="10" cols="80" id="inputText">Input html to test here</textarea>
         <button onclick="ToDohtml();">Text!</button>
-        <ul>
+        <ul id ="ul">
             
         </ul>
     </body>
     script>
             function ToDohtml() {
-                var theSpan = document.getElementById("s1");
+                var theSpan = document.getElementById("ul");
                 var userinput= document.getElementById("inputText");
-                theSpan.innerHTML= userinput.value;
-                var list = document.createElement("s1")
-                list.textContent = 
+                var list = document.createElement("ul");
+                list.textContent = document.createElement("li");
+                list.appendChild(liat);
             }
     </script>
 </html>
