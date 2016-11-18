@@ -11,7 +11,7 @@ and open the template in the editor.
     </head>
     <body>
         <div>TODO write content</div>
-        <textarea rows="10" cols="80" id="inputText">Input html to test here</textarea>
+        <textarea rows="10" cols="80" id="inputText">make list here</textarea>
         <button onclick="ToDohtml();">Text!</button>
         <ul id ="ul">
             
@@ -21,9 +21,9 @@ and open the template in the editor.
             function ToDohtml() {
                 var list = document.getElementById("ul");
                 var userinput= document.getElementById("inputText");
-                var list = document.createElement("ul");
-                list.textContent = userinput.value;
-                list.appendChild(list);
+                var item= document.createElement("li");
+                item.textContent = userinput.value;
+                list.appendChild(item);
             }
     </script>
 </html>
