@@ -42,11 +42,20 @@ and open the template in the editor.
         <script>
            var player = "X";
            function play (num) {
-           var turn = 0;
-           var XO= document.getElementById(num);
+                var turn = 0;
+                var XO= document.getElementById(num);
+                        document.getElementById(num).innerHTML="X";
+            if(document.getElementById(num).innerHTML="") {
+                if(turn % 2 === 0){
+                    document.getElementById(num).innerHTML="0";
+                }else{
+                    document.getElementById(num).innerHTML="x";
+                }
+           turn++;
+           }
+           function checkWin() {
                
            }
-            
-        </script>
+       </script>
     </body>
 </html>
