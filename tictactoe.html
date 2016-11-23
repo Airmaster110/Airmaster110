@@ -40,22 +40,30 @@ and open the template in the editor.
             </tr>
         </table>
         <script>
-           var player = "X";
+           var cell = document.getElementById(num);
            function play (num) {
-                var turn = 0;
-                var XO= document.getElementById(num);
-                        document.getElementById(num).innerHTML="X";
-            if(document.getElementById(num).innerHTML="") {
-                if(turn % 2 === 0){
-                    document.getElementById(num).innerHTML="0";
+            var turn = 0;
+            if(cell.textContent="") {
+                if(turn % 2 == 0){
+                    cell.textContent="0";
                 }else{
-                    document.getElementById(num).innerHTML="x";
+                    cell.textContent="x";
                 }
            turn++;
            }
            function checkWin() {
-               
-           }
+               check3cells("1","2","3");
+               check3cells("4","5","6");
+               check3cells("7","8","9");
+               check3cells("1","4","7");
+               check3cells("2","5","8");
+               check3cells("3","6","9");
+               check3cells("1","5","9");
+               check3cells("3","5","7");
+          }
+          function check3cells {
+              var c1 
+          }
        </script>
     </body>
 </html>
