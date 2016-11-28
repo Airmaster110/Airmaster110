@@ -51,6 +51,7 @@ and open the template in the editor.
                 }
              }
             turn++;
+            checkWin();
             }
            function checkWin() {
                check3cells("1","2","3");
@@ -61,6 +62,17 @@ and open the template in the editor.
                check3cells("3","6","9");
                check3cells("1","5","9");
                check3cells("3","5","7");
+           }
+           function check3cells(cid1, cid2, cid3) {
+               var c1 = document.getElementById(cid1);
+               var c2 = document.getElementbyId(cid2);
+               var c3 = document.getElementbyId(cid3);
+               if ((c1.textContent == c2.textContent) && (c1.textContent == c3.textContent) && (c1.textContent !="")) { 
+                   println("win");
+               }
+               
+                   
+               
            }
        
        </script>
