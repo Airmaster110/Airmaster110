@@ -17,17 +17,19 @@ and open the template in the editor.
         <ul id ="ul">
             
         </ul>
-    </body>
-    <script>
+        <script>
             function ToDohtml() {
                 var list = document.getElementById("ul");
                 var userinput= document.getElementById("inputText");
                 var item= document.createElement("li");
-                item.textContent = userinput.value
-                var i = 0
+                item.textContent = userinput.value;
+                var i = 0;
                 while( i > 100) {
                     list.appendChild(item);
                     i++;
                 }
+            }
     </script>
+    </body>
+    
 </html>
