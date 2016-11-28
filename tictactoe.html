@@ -39,6 +39,7 @@ and open the template in the editor.
               <td id="9" onclick="play('9');"></td>
             </tr>
         </table>
+        <span id="span1"></span>
         <script>
             var turn = 0;
             function play(num) {
@@ -65,14 +66,12 @@ and open the template in the editor.
            }
            function check3cells(cid1, cid2, cid3) {
                var c1 = document.getElementById(cid1);
-               var c2 = document.getElementbyId(cid2);
-               var c3 = document.getElementbyId(cid3);
+               var c2 = document.getElementById(cid2);
+               var c3 = document.getElementById(cid3);
+               var span1 = document.getElementById("span1");
                if ((c1.textContent == c2.textContent) && (c1.textContent == c3.textContent) && (c1.textContent !="")) { 
-                   println("win");
+                   span1.textContent="win";
                }
-               
-                   
-               
            }
        
        </script>
