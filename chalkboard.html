@@ -24,8 +24,10 @@ and open the template in the editor.
                 var userinput= document.getElementById("inputText");
                 var item= document.createElement("li");
                 item.textContent = userinput.value
-                while(i > 100) {
+                var i = 100
+                while( i >= 100) {
                     list.appendChild(item);
+                    i--;
                 }
     </script>
 </html>
