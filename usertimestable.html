@@ -1,0 +1,53 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Times Table</title>
+        <style>
+            table, td, th {
+                border: solid 1px;
+            }
+            td {
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body onload="buildTimesTable();">
+        <script>
+            function buildTimesTable() {
+                //Create a table for the multiplication
+                var timesTable = document.createElement("table");
+                timesTable.id = "timesTable";
+                
+                //Add the table to the document's body
+                var body = document.body;
+                body.appendChild(timesTable);
+                for(var i = 1; i < 11; i++) {
+                    var row = document.createElement("tr");
+                    timesTable.appendChild(row);
+                    
+                    
+                    for(var j = 1; j < 11; j++) {
+                        var column = document.createElement("td");
+                        row.appendChild(column);
+                        column.textContent = i * j;
+                        if (j % 3 == 0 && 1 && 2 && 3) {
+                            column.style.backgroundColor="red";     
+                        }
+                        }
+                        
+                }
+                
+                //Fill in the multiplication table
+                
+     
+                
+            }
+        </script>
+    </body>
+</html>
