@@ -18,36 +18,31 @@ and open the template in the editor.
         </style>
     </head>
     <body onload="buildTimesTable();">
+        <h1>Multiplication Table</h1>
+        Table Width: <input type ="range" id="tableWidth" min="1" max="20" value="10" onchange="buildTimesTable();"><br>
+        Table Height: <input type="range" id="tableWidth" min="10" max="100" value="10" onchange="buildTimesTable();"><br>
         <script>
             function buildTimesTable() {
-                //Create a table for the multiplication
-                var timesTable = document.createElement("table");
+                //Remove the multiplication table if it already exists.
+                var timesTable = document.getElementById("timesTable");
+                if (timesTable != null) {
+                    timesTable.parentNode.removeChild(timesTable);
+                }
+                
+                //Create a table for multiplication table
+                timesTable = document.createElement("table");
                 timesTable.id = "timesTable";
                 
                 //Add the table to the document's body
                 var body = document.body;
-                body.appendChild(timesTable);
-                for(var i = 1; i < 11; i++) {
-                    var row = document.createElement("tr");
-                    timesTable.appendChild(row);
-                    
-                    
-                    for(var j = 1; j < 11; j++) {
-                        var column = document.createElement("td");
-                        row.appendChild(column);
-                        column.textContent = i * j;
-                        if (j % 3 == 0 && 1 && 2 && 3) {
-                            column.style.backgroundColor="red";     
-                        }
-                        }
-                        
-                }
+                bpdy.appendChild(timesTable);
                 
-                //Fill in the multiplication table
+                //Get the table width and height
+                var width = document.getElementById("tableWidth").value;
+                var height = document.getElementById("tableHeight").value;
                 
-     
-                
-            }
+                //Fill in multiplication table
+             }
         </script>
     </body>
 </html>
