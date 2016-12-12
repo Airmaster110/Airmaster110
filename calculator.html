@@ -16,6 +16,7 @@ and open the template in the editor.
             var area = document.getElementById("area");
 
             var calc = w * l;
+            area = calc;
             }
         </script>
         <style>
@@ -27,10 +28,10 @@ and open the template in the editor.
     <body>
         <h1>Area of Rectangles</h1>
         <img src="rectangle.gif" style="float: left; height: 150px; margin-right: 5px;">
-        <h2>A = l * w<sup>2</sup></h2>
+        <h2>A = l * w</h2>
         
-        w: <input type="number" id="length" placeholder ="length"><br>
-        l: <input type="number" id="width" placeholder="width">
+        w: <input type="number" id="width" placeholder ="width"><br>
+        l: <input type="number" id="length" placeholder="length">
         <button onclick="calc();">Calculate</button>
         <hr>
         area: <input type="output" id="area" placeholder="area" readonly>
