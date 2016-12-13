@@ -59,7 +59,7 @@ function buildMap(x) {
     
     var linkChalkboard = document.createElement("A");
     var nestedListItem = document.createElement("li");
-    linkChalkboard.setAttribute("href", "chalkbaord.html");
+    linkChalkboard.setAttribute("href", "chalkboard.html");
     linkChalkboard.textContent = "ChalkBoard";
     nestedListItem.appendChild(linkChalkboard);
     nestedList.appendChild(nestedListItem);
@@ -80,7 +80,7 @@ function buildMap(x) {
     
     var linkMoreMultiplication = document.createElement("A");
     var nestedListItem = document.createElement("li");
-    linkMoreMultiplication.setAttribute("href", "usertimstable.html");
+    linkMoreMultiplication.setAttribute("href", "usertimestable.html");
     linkMoreMultiplication.textContent = "User Times Table";
     nestedListItem.appendChild(linkMoreMultiplication);
     nestedList.appendChild(nestedListItem);
