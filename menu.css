@@ -1,0 +1,61 @@
+/* 
+    Document   : menu
+    Created on : Dec 13, 2016, 7:45:38 AM
+    Author     : S95611
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#menubar {
+	position: relative;
+	padding: 0px;
+	display: block;
+        background-color: grey;
+}
+
+#menubar > ul {
+	position: relative;
+	display:  inline-block;
+	text-decoration: none;
+	list-style-type: none;
+        margin: 0;
+        padding: 0;
+}
+
+#menubar > ul > li {
+    display: inline-block;
+    padding: 8px;
+}
+
+#menubar ul li {
+    list-style: none;
+    text-indent: 0px;
+}
+
+#menubar ul ul {
+	display: none;
+	position: absolute;
+        background-color: lightgrey;
+        padding: 0px;
+}
+
+#menubar ul li:hover ul,
+#menubar ul li:focus ul,
+#menubar ul li:active ul {
+	display: block;
+}
+
+#menubar a {
+	display: block;
+        color: black;
+        padding: 8px;
+        text-decoration: none;
+}
+
+#menubar ul ul li a:hover {
+	background-color: grey;
+	color: white;
+}
+
+
+

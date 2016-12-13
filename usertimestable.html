@@ -5,6 +5,8 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="menu.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>Times Table</title>
@@ -18,6 +20,7 @@ and open the template in the editor.
         </style>
     </head>
     <body onload="buildTimesTable();">
+        <div id="menubar"></div>
         <h1>Multiplication Table</h1>
         Table Width: <input type ="range" id="tableWidth" min="1" max="20" value="10" onchange="buildTimesTable();"><br>
         Table Height: <input type="range" id="tableHeight" min="10" max="100" value="10" onchange="buildTimesTable();"><br>
