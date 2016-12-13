@@ -11,6 +11,7 @@ and open the template in the editor.
         <meta name=""viewport" content= "width=device-width">
         <title>Calculator</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="sitemap.js"></script>
         <script>
             function calc() {
             var w = parseFloat(document.getElementById("width").value);
@@ -26,7 +27,7 @@ and open the template in the editor.
             }
         </style>
     </head>
-    <body>
+    <body onload="buildMap('menubar');">
         <div id="menubar"></div>
         <h1>Area of Rectangles</h1>
         <img src="rectangle.gif" style="float: left; height: 150px; margin-right: 5px;">

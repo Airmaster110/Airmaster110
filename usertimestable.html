@@ -7,6 +7,7 @@ and open the template in the editor.
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="menu.css">
+        <script src="sitemap.js"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>Times Table</title>
@@ -19,7 +20,7 @@ and open the template in the editor.
             }
         </style>
     </head>
-    <body onload="buildTimesTable();">
+    <body onload="buildTimesTable();buildMap('menubar');">
         <div id="menubar"></div>
         <h1>Multiplication Table</h1>
         Table Width: <input type ="range" id="tableWidth" min="1" max="20" value="10" onchange="buildTimesTable();"><br>
