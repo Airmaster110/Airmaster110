@@ -85,6 +85,13 @@ function buildMap(x) {
     nestedListItem.appendChild(linkMoreMultiplication);
     nestedList.appendChild(nestedListItem);
     
+    var linkCalculator = document.createElement("A");
+    var nestedListItem = document.createElement("li");
+    linkCalculator.setAttribute("href", "calculator.html");
+    linkCalculator.textContent = "Area of Rectangle Calculator";
+    nestedListItem.appendChild(linkCalculator);
+    nestedList.appendChild(nestedListItem);
+    
     
 }
 
