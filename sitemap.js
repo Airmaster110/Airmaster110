@@ -10,7 +10,7 @@ function buildMap(x) {
     
     var linkIndex = document.createElement("A");
     var listItem = document.createElement("li");
-    linkIndex.setAttribute("href", "index.html");
+    linkIndex.setAttribute("href", "404.html");
     linkIndex.textContent = "Home";
     listItem.appendChild(linkIndex);
     bullet.appendChild(listItem);
