@@ -52,7 +52,7 @@ function buildMap(x) {
     
     var linkToDoList = document.createElement("A");
     var nestedListItem = document.createElement("li");
-    linkToDoList.setAttribute("href", "popup.html");
+    linkToDoList.setAttribute("href", "todolist.html");
     linkToDoList.textContent = "To Do List";
     nestedListItem.appendChild(linkToDoList);
     nestedList.appendChild(nestedListItem);
