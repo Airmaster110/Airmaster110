@@ -92,6 +92,13 @@ function buildMap(x) {
     nestedListItem.appendChild(linkCalculator);
     nestedList.appendChild(nestedListItem);
     
+    var linkSecretPassage = document.createElement("A");
+    var nestedListItem = document.createElement("li");
+    linkSecretPassage.setAttribute("href", "Secret Passage.html");
+    linkSecretPassage.textContent = "Secret Lair";
+    nestedListItem.appendChild(linkCalculator);
+    nestedList.appendChild(nestedListItem);
+    
     
 }
 
