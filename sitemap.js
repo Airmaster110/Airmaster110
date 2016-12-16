@@ -22,13 +22,6 @@ function buildMap(x) {
     listItem.appendChild(linkBio);
     bullet.appendChild(listItem);
     
-    var linkMainPage = document.createElement("A");
-    var listItem = document.createElement("li");
-    linkMainPage.setAttribute("href", "404.html");
-    linkMainPage.textContent = "Main Page";
-    listItem.appendChild(linkMainPage);
-    bullet.appendChild(listItem);
-    
     var linkItem = document.createElement("A");
     listItem.textContent = "Class Projects";
     bullet.appendChild(listItem);
