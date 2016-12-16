@@ -96,7 +96,7 @@ function buildMap(x) {
     var nestedListItem = document.createElement("li");
     linkSecretPassage.setAttribute("href", "Secret Passage.html");
     linkSecretPassage.textContent = "Secret Lair";
-    nestedListItem.appendChild(linkCalculator);
+    nestedListItem.appendChild(linkSecretPassage);
     nestedList.appendChild(nestedListItem);
     
     
