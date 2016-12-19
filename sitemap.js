@@ -23,6 +23,7 @@ function buildMap(x) {
     bullet.appendChild(listItem);
     
     var linkItem = document.createElement("A");
+    var listItem = document.createElement("li");
     listItem.textContent = "Class Projects";
     bullet.appendChild(listItem);
     
