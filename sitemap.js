@@ -17,8 +17,8 @@ function buildMap(x) {
     
     var linkBio = document.createElement("A");
     var listItem = document.createElement("li");
-    linkIndex.setAttribute("href", "404.html");
-    linkIndex.textContent = "Bio";
+    linkBio.setAttribute("href", "404.html");
+    linkBio.textContent = "Bio";
     listItem.appendChild(linkBio);
     bullet.appendChild(listItem);
     
