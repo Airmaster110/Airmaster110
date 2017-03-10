@@ -29,6 +29,13 @@ function buildMap(x) {
     listItem.appendChild(linkAnimeMemes);
     bullet.appendChild(listItem);
     
+    var linkAnimeSongs = document.createElement("A");
+    var listItem = document.createElement("li");
+    linkAnimeSongs.setAttribute("href", "animesongs.html");
+    linkAnimeSongs.textContent = "Anime Songs";
+    listItem.appendChild(linkAnimeSongs);
+    bullet.appendChild(listItem);
+    
     var linkItem = document.createElement("A");
     var listItem = document.createElement("li");
     listItem.textContent = "Class Projects";
